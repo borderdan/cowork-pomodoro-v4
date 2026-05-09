@@ -1,25 +1,24 @@
-# Dependencies
-node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Build outputs
-dist/
-build/
+node_modules
+dist
+dist-ssr
 *.local
 
-# Logs
-*.log
-dev_output.log
-npm_output.log
-vite_output.log
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# OS
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-
-# Jules artifacts
-verification*.png
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

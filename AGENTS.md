@@ -50,3 +50,38 @@
 - Verify your changes compile: ensure no TypeScript/JSX errors
 - Do not modify existing test files unless explicitly instructed
 - Do not add test files unless explicitly instructed
+
+## Auto-Discovered Facts
+
+> Last updated by AgentsUpdater after PR #1 (task 1543).
+> Generated: 2026-05-09T23:31:38.114Z
+
+### Modified Files
+- `.gitignore`
+- `README.md`
+- `eslint.config.js`
+- `index.html`
+- `package-lock.json`
+- `package.json`
+- `postcss.config.js`
+- `public/favicon.svg`
+- `public/icons.svg`
+- `src/App.tsx`
+- `src/assets/react.svg`
+- `src/assets/vite.svg`
+- `src/components/Timer.tsx`
+- `src/index.css`
+- `src/main.tsx`
+- `tailwind.config.js`
+- `tsconfig.app.json`
+- `tsconfig.json`
+- `tsconfig.node.json`
+- `vite.config.ts`
+
+### Exported Symbols
+`Timer`
+
+### TypeScript Interfaces / Types
+`Mode`
+
+<!-- /auto-discovered-facts -->

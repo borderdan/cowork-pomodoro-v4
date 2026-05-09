@@ -53,35 +53,19 @@
 
 ## Auto-Discovered Facts
 
-> Last updated by AgentsUpdater after PR #1 (task 1543).
-> Generated: 2026-05-09T23:31:38.114Z
+> Last updated by AgentsUpdater after PR #2 (task 1544).
+> Generated: 2026-05-09T23:41:13.233Z
 
 ### Modified Files
-- `.gitignore`
-- `README.md`
-- `eslint.config.js`
-- `index.html`
 - `package-lock.json`
 - `package.json`
-- `postcss.config.js`
-- `public/favicon.svg`
-- `public/icons.svg`
-- `src/App.tsx`
-- `src/assets/react.svg`
-- `src/assets/vite.svg`
-- `src/components/Timer.tsx`
-- `src/index.css`
-- `src/main.tsx`
-- `tailwind.config.js`
-- `tsconfig.app.json`
-- `tsconfig.json`
-- `tsconfig.node.json`
-- `vite.config.ts`
+- `src/store/useTimerStore.ts`
+- `src/types/index.ts`
 
 ### Exported Symbols
-`Timer`
+`useTimerStore`, `useMode`, `useTimeLeft`, `useIsActive`, `useSettings`, `useHistory`, `useTimerActions`
 
 ### TypeScript Interfaces / Types
-`Mode`
+`Mode`, `Settings`, `SessionRecord`, `TimerState`
 
 <!-- /auto-discovered-facts -->

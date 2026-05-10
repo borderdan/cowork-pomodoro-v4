@@ -9,9 +9,9 @@ export const Timer: React.FC = () => {
   const isActive = useTimerStore((state) => state.isActive);
   const settings = useTimerStore((state) => state.settings);
   const setMode = useTimerStore((state) => state.setMode);
-  const setTimeLeft = useTimerStore((state) => state.setTimeLeft);
   const setIsActive = useTimerStore((state) => state.setIsActive);
   const resetTimer = useTimerStore((state) => state.resetTimer);
+  const tick = useTimerStore((state) => state.tick);
 
   // Calculate total time for current mode
   const totalTime = React.useMemo(() => {
@@ -26,19 +26,18 @@ export const Timer: React.FC = () => {
   useEffect(() => {
     let interval: ReturnType<typeof setInterval> | null = null;
 
-    if (isActive && timeLeft > 0) {
+    // A better approach for accurate timer with Zustand action `tick` that decrements by 1:
+    // When active, set an interval.
+    if (isActive) {
       interval = setInterval(() => {
-        setTimeLeft((time) => time - 1);
+        tick();
       }, 1000);
-    } else if (timeLeft === 0 && isActive) {
-      setIsActive(false);
-      if (interval) clearInterval(interval);
     }
 
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [isActive, timeLeft, setTimeLeft, setIsActive]);
+  }, [isActive, tick]);
 
   const toggleTimer = () => setIsActive(!isActive);
 

@@ -31,4 +31,5 @@ export interface TimerState {
   addSessionRecord: (record: Omit<SessionRecord, 'id' | 'completedAt'>) => void;
   clearHistory: () => void;
   resetTimer: () => void;
+  tick: () => void;
 }
